@@ -1,0 +1,97 @@
+* body {
+    font-family:'Times New Roman', Times, serif ;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+form {
+    border: 3px solid greenyellow; 
+    border-radius: 5px;
+    padding: 0 25px;
+}
+
+fieldset {
+    border: none;
+border-radius: 5px;
+}
+legend {
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top:12px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 100px;
+    min-height: 25px;
+}
+.input {
+    display: flex;
+    width: 100%;
+    margin: 10px 0 ;
+    border: 0.5px solid;
+    border-radius: 5px;
+    cursor:auto;  
+}
+.input::placeholder {
+    color:blue; 
+}
+.label-checkbox {
+    display: inline-block;
+    padding-right: 22px;
+}
+.checkbox {
+    position: absolute;
+border-radius: 5px; 
+appearance: none;
+}
+.checkbox::after {
+    content:'';
+    position: absolute;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.checkbox:checked::after {
+    background: url("./images/Tick_Mark_icon-icons.com_69146.svg") no-repeat center, #fcfcfc;
+}
+.input:disabled,
+.checkbox:disabled::after,
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.button {
+    margin-top: 0;
+    position: relative;
+    left: 7px;
+    cursor:pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #9fd21e;
+    color: #0c27e9;
+    transition: opacity 0.2s;
+}
+.button:hover {
+   opacity: 0.8; 
+} 
+.button:disabled 
+.button:not(:disabled):active {
+    background-color: #628213;
+}
+ 
+.button:active {
+    background-color: #628213;
+}
+.input:focus-visible ,
+.checkbox:focus-visible::after,
+.button:focus-visible {
+    outline: 2px solid chartreuse;
+    outline-offset: 1px;
+}
+
