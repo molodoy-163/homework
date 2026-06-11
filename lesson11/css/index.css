@@ -135,7 +135,7 @@ summary::after {
     display: inline-block;
     width: 17px;
     height: 22px; 
-    background: url(/images/arrow-down-icon.svg) no-repeat center /cover;
+    background: url(../images/arrow-down-icon.svg) no-repeat center /cover;
 }
 /* Удаление маркера для браузера Safari */
 
